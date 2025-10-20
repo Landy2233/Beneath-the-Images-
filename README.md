@@ -21,7 +21,8 @@ The flag has been concealed by setting a height value in the image header that i
 
 * The **Start of Frame (SOF0)** marker is identified by the hexadecimal sequence **`FF C0`**.
 * The Height value is a 2-byte hexadecimal number that is located immediately following the SOF0 marker and the 2-byte length segment.
-![Challenge Image: Start of Frame](images/Start of Frame.jpg)
+  
+![Challenge Image: Start of Frame](https://github.com/Landy2233/Beneath-the-Images-/blob/main/Start%20of%20Frame.png)
 
 * You will need to use converters to switch between decimal and hexadecimal for your calculations:
     * **Hex to Decimal Converter:** [https://www.binaryhexconverter.com/hex-to-decimal-converter](https://www.binaryhexconverter.com/hex-to-decimal-converter)
