@@ -2,13 +2,13 @@
 
 ---
 
-## 📜 Problem Description
+## Problem Description
 
 We've intercepted a highly suspicious image file, **`cat.jpg`**. At first glance, it appears to be just a harmless photo, but forensic analysis suggests the image canvas has been intentionally manipulated to **hide text outside of the viewable area**.
 
 The flag has been concealed by setting a height value in the image header that is too small for the image's actual content. Your task is to correct the header and reveal the secret message hidden below the visible image frame.
 
-## 🎯 Task
+## Task
 
 1.  Open the **`cat.jpg`** file in [CyberChef](https://gchq.github.io/CyberChef/).
 2.  Locate the **Start of Frame (SOF0)** marker, which defines the image's dimensions.
@@ -17,7 +17,7 @@ The flag has been concealed by setting a height value in the image header that i
 5.  Convert this new total height back into a 2-byte hexadecimal value.
 6.  Modify the image file's header with the new hexadecimal height value and re-render the image to capture the flag.
 
-## 💡 Hints
+## Hints
 
 * The **Start of Frame (SOF0)** marker is identified by the hexadecimal sequence **`FF C0`**.
 * The Height value is a 2-byte hexadecimal number that is located immediately following the SOF0 marker and the 2-byte length segment.
